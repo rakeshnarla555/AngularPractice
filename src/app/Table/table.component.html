@@ -1,0 +1,20 @@
+<div class="table">
+  <p-table [value]="products">
+    <ng-template pTemplate="header">
+     <tr >
+      <th pSortableColumn="id">Id <p-sortIcon field="code"></p-sortIcon></th>
+      <th pSortableColumn="name">Name <p-sortIcon field="code"></p-sortIcon></th>
+      <th pSortableColumn="subject">Subject <p-sortIcon field="code"></p-sortIcon></th>
+      <th pSortableColumn="marks">Marks <p-sortIcon field="code"></p-sortIcon></th>
+     </tr>
+    </ng-template>
+   <ng-template pTemplate="body"  let-products>
+     <tr>
+       <td>{{products.Id}}</td>
+       <td>{{products.Name}}</td>
+       <td>{{products.Subject}}</td>
+       <td>{{products.Marks}}</td>
+     </tr>
+   </ng-template>
+ </p-table>
+</div>
